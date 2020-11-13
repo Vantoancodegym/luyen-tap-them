@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<input type="number" value="Nhập số càn kiểm tra" id="nhapSo">
+<h3 id="result"></h3>
+<button type="button" onclick="clickE()">click</button>
+<script>
+    function clickE(){
+        let number = document.getElementById("nhapSo").value ;
+        if (number < 0) {
+        document.getElementById("result").innerText = "là số nguyên âm"}
+        else if (number == 0) {
+            document.getElementById("result").innerText = "là số 0"}
+        else {
+            document.getElementById("result").innerText = "là số dương"
+        }
+    }
+</script>
+
+</body>
+</html>

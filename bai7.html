@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<input type="number" value="Nhập số điện" id="nhapD">
+<input type="button" value="kiemtra" onclick="checkT()">
+<h4 id="result"></h4>
+
+</body>
+<script>
+    function checkT(){
+        let x = document.getElementById("nhapD").value
+        if (x<100){
+            document.getElementById("result").innerText = x*1500
+        }
+        else {
+            document.getElementById("result").innerText = x*2000
+        }
+    }
+
+
+</script>
+</html>

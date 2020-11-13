@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<input id="nhapA" type="number" >
+<input id="nhapB" type="number" >
+<input id="nhapC" type="number" >
+<button type="button" onclick="clickE()">click</button>
+<h3 id="result"></h3>
+<script>
+    function clickE(){
+    let a = parseFloat(document.getElementById("nhapA").value)
+    let b = parseFloat(document.getElementById("nhapB").value)
+    let c = parseFloat(document.getElementById("nhapC").value)
+    let d
+    (a>b)?((a>c)?(d = a ):(d = c )) : ((b>c)?(d = b ):(d = c))
+    document.getElementById("result").innerText = "số lớn nhất là   " + d;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<input type="number" value="Nhập tuổi của bạn" id="nhapTuoi">
+<input type="button" value="kiemtra" onclick="checkT()">
+<h4 id="result"></h4>
+</body>
+<script>
+    function checkT(){
+        let age = document.getElementById("nhapTuoi").value ;
+        if (age < 15){
+            document.getElementById("result").innerText = "bạn chưa đủ tuổi vào lớp 10";
+        }else if (age < 20){
+            document.getElementById("result").innerText = "bạn đủ tuổi vào lớp 10";
+        }else {
+            document.getElementById("result").innerText = "bạn quá tuổi vào lớp 10";
+        }
+    }
+</script>
+</html>

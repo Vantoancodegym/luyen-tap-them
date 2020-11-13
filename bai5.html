@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<input id="nhapA" type="number" value="Nhập điểm kiểm tra" >
+<input id="nhapB" type="number" value="Nhập điểm giữa kỹ">
+<input id="nhapC" type="number" value="Nhập điểm cuối ký">
+<button type="button" onclick="clickE()">click</button>
+<h3 id="result"></h3>
+<script>
+    function clickE() {
+        let a = parseFloat(document.getElementById("nhapA").value);
+        let b = parseFloat(document.getElementById("nhapB").value);
+        let c = parseFloat(document.getElementById("nhapC").value);
+        let dtb = (a + 2 * b + 3 * c) / 3;
+        if (dtb > 9){
+            document.getElementById("result").innerText = "loại giỏi"
+        }else if (dtb > 7){
+            document.getElementById("result").innerText = "loại khâ"
+        }else if (dtb > 5){
+            document.getElementById("result").innerText = "loại trung bình"}
+        else {
+            document.getElementById("result").innerText = "loại yếu"
+        }
+    }
+
+</script>
+
+</body>
+</html>
